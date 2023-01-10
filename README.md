@@ -4,4 +4,4 @@
 
 ## built completely with JavaScript, HTML, and CSS
 
-<author> Kankam Nathaniel </author>
+<author> by @Atemmuda </author>
