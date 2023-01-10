@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #30676b;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #1f3031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20vw;
+  height: 50vh;
+}
+
+h1,
+small,
+label {
+  color: #fff;
+  padding: 5px;
+}
+
+label {
+  bottom: 20px;
+  left: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 5px;
+  width: 90%;
+  margin: 5px;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+input:focus,
+input:valid {
+  outline: none;
+}
+
+button {
+  background-color: rgb(45, 64, 122);
+  border: none;
+  width: 90%;
+  margin: 5px;
+  padding: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.creat-account {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(149, 163, 206);
+}

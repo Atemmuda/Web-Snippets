@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+html {
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  --primary-color: #333;
+  --secodary-color: #fff;
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.toggle {
+  position: absolute;
+  top: 5vh;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  background-color: #f0f0f0;
+  height: 300px;
+  width: 300px;
+}
+
+.clock-handle {
+  height: 70px;
+  width: 8px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-color: var(--primary-color);
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in;
+}
+
+.clock-handle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 60px;
+}
+
+.clock-handle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 75px;
+  width: 5px;
+  background-color: #bb00ef;
+}
+
+.clock-handle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 90px;
+  width: 3px;
+  background-color: #ff6600;
+}
+
+.center-point {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(235, 202, 57);
+  border-radius: 50%;
+}
+.center-point::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 70px;
+}
+
+.date {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.day {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 25px;
+  transition: all 0.5s ease-in;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1.1rem;
+}

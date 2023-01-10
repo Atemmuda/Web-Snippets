@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.verify-account-container {
+  background-color: #fff;
+  text-align: center;
+  max-width: 1000px;
+  border: 3px #222 solid;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.number-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.number-code {
+  border-radius: 5px;
+  font-size: 75px;
+  height: 120px;
+  border: 1px solid #eee;
+  margin: 1%;
+  text-align: center;
+  font-weight: 300;
+  padding: none;
+  width: 70px;
+  -moz-appearance: textfield;
+}
+.number-code:valid {
+  border-color: #3498bd;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.number-code::-webkit-outer-spin-button,
+.number-code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.info-footer {
+  background-color: #eaeaea;
+  display: inline-block;
+  color: #777;
+  padding: 10px;
+  line-height: 20px;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .number-code {
+    font-size: 50px;
+    height: 80px;
+    max-width: 70px;
+  }
+  body {
+    overflow-x: hidden;
+    overflow: visible;
+  }
+}
